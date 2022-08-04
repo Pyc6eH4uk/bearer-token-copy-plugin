@@ -1,0 +1,19 @@
+{
+  "name": "Copybear",
+  "description": "Copy Bearer token from authorization header!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "activeTab", 
+    "scripting"
+  ],
+  "host_permissions": ["https://*/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
